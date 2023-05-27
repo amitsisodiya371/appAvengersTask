@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const connectDB = require('./config/db');
 const blogRoutes = require('./routes/blogRoutes');
 
 const app = express();
-const port = 8080;
+const port = 3030;
 
+app.use(cors());
 // Middleware
 app.use(express.json());
 
