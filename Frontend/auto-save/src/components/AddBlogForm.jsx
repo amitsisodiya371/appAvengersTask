@@ -4,8 +4,8 @@ const AddBlogForm = ({Count,setCount}) => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [content, setContent] = useState('');
+  
   const handleSubmit = async (e) => {
-
     e.preventDefault();
     try {
         await fetch('http://localhost:3030/api/blogs', {
