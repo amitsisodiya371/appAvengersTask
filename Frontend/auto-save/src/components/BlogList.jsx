@@ -3,7 +3,6 @@ import { BlogContext } from '../ContextApi/BlogContext';
 
 const BlogList = () => {
   const { blogs, fetchBlogs } = useContext(BlogContext);
-
   useEffect(() => {
     fetchBlogs();
   }, [fetchBlogs]);

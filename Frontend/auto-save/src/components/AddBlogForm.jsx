@@ -27,5 +27,4 @@ const AddBlogForm = () => {
     </div>
   );
 };
-
 export default AddBlogForm;

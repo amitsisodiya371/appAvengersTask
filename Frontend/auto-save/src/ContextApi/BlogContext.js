@@ -28,5 +28,4 @@ const BlogProvider = ({ children }) => {
     <BlogContext.Provider value={values}>{children}</BlogContext.Provider>
   );
 };
-
 export { BlogContext, BlogProvider };
