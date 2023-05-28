@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { BlogContext } from './redux/BlogContext';
 
-const BlogList = ({Count,setCount}) => {
-  const [blogs, setBlogs] = useState([]);
-  
+const BlogList = () => {
+  const { blogs, fetchBlogs } = useContext(BlogContext);
+
   useEffect(() => {
     fetchBlogs();
-  }, [Count]);
-
-  const fetchBlogs = async () => {
-    try {
-      const response = await fetch('http://localhost:3030/api/blogs');
-      const data = await response.json();
-      setBlogs(data);
-    } catch (error) {
-      console.error('Error fetching blogs', error);
-    }
-  };
+  }, [fetchBlogs]);
 
   return (
     <div>
