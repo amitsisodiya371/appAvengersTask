@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBlog } from './redux/action';
+import { addBlog } from '../redux/action';
 
 const AddBlogForm = () => {
   const dispatch = useDispatch();

@@ -21,7 +21,7 @@ const BlogProvider = ({ children }) => {
 
   const values = {
     blogs,
-    fetchBlogs, // Update: Include fetchBlogs in the values object
+    fetchBlogs, 
   };
 
   return (

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { BlogContext } from './redux/BlogContext';
+import { BlogContext } from '../ContextApi/BlogContext';
 
 const BlogList = () => {
   const { blogs, fetchBlogs } = useContext(BlogContext);
