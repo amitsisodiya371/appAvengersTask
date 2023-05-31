@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // MongoDB connection URL
 // const mongoURI = 'mongodb://127.0.0.1:27017/';
 
-const mongoURI = 'mongodb+srv://asisodiya9045:1234@cluster0.pjakzvw.mongodb.net/';
+const mongoURI = 'mongodb+srv://asisodiya9045:7410@cluster0.cd0able.mongodb.net/';
 
 const connectDB = async () => {
   try {  
@@ -15,3 +15,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
